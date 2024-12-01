@@ -1,33 +1,70 @@
-# fall2024-finalproject
-Your assignment for this project is to create a weather app which is entered through a login page and displays the current weather on a second page.  The assignment is further detailed in the requirements that follow.
+# Getting Started with Create React App
 
-This is a group assignment of 3-4 students per group. Only one submission per group is needed. Commit your code to your respective GitHub repos. Commit your front-end code into your front-end repo and commit your back-end code into your back-end repo.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Requirements (for the app)
-Front-End
-The user interface ( front end) will be built using ReactJS.
-A user will login using their email  address and password.
-A password must be a minimum of 8 characters long and must contain at least one capital letter, at least one digit, and at least one special character like $, & !, #, ...  Quotes, back quotes and the apostrophe are excluded from the list of special characters.
-A successful login routes the user to the current weather page.
-An unsuccessful login, displays an error message on the login page and does not transfer the user to the current weather page. (Do not use popup alerts to display error messages.) 
-Back-End
-The back-end server will be a node application.
-The back-end will implement RESTful API routes.
-User data will be stored in a MongoDB database.
-All requests for a route will be logged to the user console.
-General Requirements
-Users will be identified by an email address.
-At a minimum the data stored for a user will include:
-An email address
-A password
-Their first name (separate field)
-Their last name (separate field)
-Date the use last logged in
-Date the account was created
-Code for the front-end will be stored in your front-end repo.
-Code for the back-end will be stored in your back end repo.
-Repos for This Assignment
-Front End:  myWeather: Final Project the Front-End RepoLinks to an external site.
-Back End: myWeather: Final Project the Back-End RepoLinks to an external site.
-Remember
-All the files you create or modify should follow the commenting standards introduced in class.
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
