@@ -1,1 +1,1 @@
-import './styles/SearchStyles.css';
+//import './styles/SearchStyles.css';
