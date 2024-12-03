@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require("express");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
@@ -53,5 +54,26 @@ app.listen(3000,
     function () {
         console.log("App is running on Port 3000");
     });
+=======
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./components/Login";
+import Search from "./components/Search";
+import Results from "./components/Results";
+
+//routing between pages
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login/>} />
+        <Route path="/search" element={<Search/>} />
+        <Route path="/results" element={<Results/>} />
+      </Routes>
+    </Router>
+  );
+}
+>>>>>>> 479233c4013e07da72f02c52f679b03435746b8d
 
 export default App;
