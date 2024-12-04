@@ -1,4 +1,4 @@
-
+// Import dependencies
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -14,13 +14,19 @@ const PORT = 3010;
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
+// Logging Middleware
+app.use((req, res, next) => {
+  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+  next();
+});
+
+// Connect MongoDB
 mongoose
   .connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connected to MongoDB"))
   .catch((error) => console.error("Error connecting to MongoDB:", error));
 
-// Define User Schema
+// User Schema and Model
 const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
@@ -30,7 +36,6 @@ const userSchema = new mongoose.Schema({
   createdDate: { type: Date, default: Date.now },
 });
 
-// Create model from schema
 const User = mongoose.model("User", userSchema);
 
 // Routes
@@ -65,16 +70,20 @@ app.get("/api/curweather", async (req, res) => {
   const zip = req.query.zip;
   const apiKey = "bf28e2ec66f8261604d86477ac848673"; // OpenWeatherMap API key
 
-  const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?zip=${zip},US&units=imperial&appid=${apiKey}`
-  );
-  const data = await response.json();
+  try {
+    const response = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?zip=${zip},US&units=imperial&appid=${apiKey}`
+    );
+    const data = await response.json();
 
-  // Respond with the weather data or an error
-  if (data.cod === 200) {
-    res.json(data);
-  } else {
-    res.status(400).json({ error: "Invalid ZIP Code" });
+    if (data.cod === 200) {
+      res.json(data);
+    } else {
+      res.status(400).json({ error: "Invalid ZIP Code" });
+    }
+  } catch (error) {
+    console.error("Error fetching weather data:", error);
+    res.status(500).json({ error: "Internal server error" });
   }
 });
 
