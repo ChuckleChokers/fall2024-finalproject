@@ -1,0 +1,62 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* half viewport height to try to fix centering issue */
+    background-color: #ffffff;
+  }
+  
+  /* Logo style */
+  .logo {
+    width: 250px;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+
+  
+  p {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #fac829;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #e6b722;
+  }
+   
+  /* Error message style */
+  .error {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  

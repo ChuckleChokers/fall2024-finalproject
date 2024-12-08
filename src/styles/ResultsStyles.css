@@ -1,0 +1,55 @@
+/* Styles for the Results component */
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Wrapper for title and city name */
+  .results-header {
+    display: flex;
+    align-items: baseline; /* Align the city name with the title */
+    gap: 12px; /* Space between the city name and "Weather" */
+    margin-bottom: 20px;
+  }
+  
+  /* Title styling */
+  .results-title {
+    color: #fac829; /* Yellow for 'Weather' */
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  /* City name styling */
+  .city-name {
+    color: #2dace3; /* Blue for city name */
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  /* display box styling */
+  .results-box {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Weather data list styling */
+  .weather-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+  }
+  
+  .weather-list li {
+    margin: 10px 0;
+    color: #333;
+  }
+  
