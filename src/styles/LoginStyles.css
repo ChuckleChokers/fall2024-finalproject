@@ -1,76 +1,72 @@
-
+/* Shared Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-  
-  /* Logo or image Styling */
-  .logo {
-    display: block;
-    margin: 20px auto;
-    width: 250px; /* Adjust to change size of image*/
-  }
-  
-  /* Login Container */
-  /*. login containeer to prevent styles from cascading to other pages */
-  .login-container {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  /* Card Styling */
-  .card {
-    display: inline-block;
-    background-color: #f0f0f0;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: left;
-    position: relative;
-  }
-  
-  /* Card Heading */
 
+
+/* Logo Styling */
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 250px; /* logo size */
+}
+
+/* Login Container */
+.login-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Card Styling */
+.card {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+  position: relative;
+}
+
+/* Card Heading */
 .card h1 {
-    font-size: 1em; 
-    text-align: center;
-    color: black; 
-    margin: 0; 
-    padding-bottom: 5px;
-  }
-  
-  /* Input Fields */
-  .login-container input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  /* Red font Error Message */
-  .error {
-    color: red;
-    font-size: 0.9em;
-    margin-top: 10px;
-  }
-  
-  /* Button Styling with hover over to change color*/
-  /*. login containeer to prevent styles from cascading to other pages */
-  .login-container button {
-    background-color: #fac829;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1em;
-    width: 100%;
-  }
-  
-  button:hover {
-    background-color: #e6b722;
-  }
-  
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black; 
+}
+
+/* Input Fields */
+.lgoin-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+/* Button Styling */
+.login-container button {
+  background-color: #fac829;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #e6b722;
+}
