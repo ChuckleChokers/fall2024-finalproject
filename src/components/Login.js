@@ -58,7 +58,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <img src={logo} alt="Weather Wise Logo" className="logo" />
-      <div className="card">
+      <div className="form-container">
         <h1>Log in</h1>
         <form onSubmit={handleLogin}>
           <div>

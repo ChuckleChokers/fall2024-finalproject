@@ -1,4 +1,4 @@
-/* Shared Styles */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -15,24 +15,24 @@ body {
 
 /* Login Container */
 .login-container {
-  text-align: center;
+  text-align: center; /* center login form */
   margin-top: 50px;
 }
 
-/* Card Styling */
-.card {
+/* form styling */
+.form-container {
   display: inline-block;
   background-color: #f0f0f0;
-  padding: 30px;
+  padding: 30px; /* padding around form */
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   width: 300px;
-  text-align: left;
+  text-align: left; /* align text to left */
   position: relative;
 }
 
-/* Card Heading */
-.card h1 {
+/* form heading */
+.form-container h1 {
   font-size: 15px;
   text-align: center;
   margin-bottom: 20px;
@@ -40,7 +40,7 @@ body {
 }
 
 /* Input Fields */
-.lgoin-container input {
+.login-container input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -48,10 +48,10 @@ body {
   border-radius: 5px;
 }
 
-/* Error Message */
+/* error message */
 .error {
   color: red;
-  font-size: 0.9em;
+  font-size: 1em;
   margin-top: 10px;
 }
 

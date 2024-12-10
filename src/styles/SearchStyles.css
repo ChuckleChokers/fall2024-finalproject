@@ -10,11 +10,13 @@ body {
   }
   
   /* Logo style */
-  .logo {
+  .search-logo {
+    display: block;
+    margin: 20px auto;
     width: 250px;
   }
   
-  .container {
+  .container-search {
     text-align: center;
     background-color: #f7f7f7;
     padding: 20px;
@@ -27,7 +29,7 @@ body {
   
   p {
     margin-bottom: 20px;
-    color: #333;
+    color: black;
   }
   
   input {

@@ -24,10 +24,10 @@ const Search = () => {
   return (
     <div>
       <div style={{ textAlign: "center", marginBottom: "20px" }}>
-        <img src={logo} alt="Weather Wise Logo" className="logo" />
+        <img src={logo} alt="Weather Wise Logo" className="search-logo" />
 
       </div>
-      <div className="container">
+      <div className="container-search">
         <p>Enter your Zip Code to Display the Weather.</p>
         <div>
           <input
